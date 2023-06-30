@@ -4,13 +4,15 @@ import github from "../../assets/github.svg";
 
 import styles from "./Layout.module.css";
 
+import logo from "../../images/ca-labs-logo-white.png";
+
 const Layout = () => {
     return (
         <div className={styles.layout}>
             <header className={styles.header} role={"banner"}>
                 <div className={styles.headerContainer}>
-                    <Link to="/" className={styles.headerTitleContainer}>
-                        <h3 className={styles.headerTitle}>calab.ai | GPT Enterprise Search</h3>
+                    <Link to="/" className={styles.headerLogoContainer}>
+                    <img src={logo} alt="Company Logo" />
                     </Link>
                     <nav>
                         <ul className={styles.headerNavList}>
@@ -24,7 +26,7 @@ const Layout = () => {
                                     Ask a question
                                 </NavLink>
                             </li>
-                            <li className={styles.headerNavLeftMargin}>
+                            {/* <li className={styles.headerNavLeftMargin}>
                                 <a href="https://github.com/Cognitive-Automation-Labs/azure-search-openai-demo" target={"_blank"} title="Github repository link">
                                     <img
                                         src={github}
@@ -35,7 +37,7 @@ const Layout = () => {
                                         className={styles.githubLogo}
                                     />
                                 </a>
-                            </li>
+                            </li> */}
                         </ul>
                     </nav>
                     <h4 className={styles.headerRightText}>OpenAI GPT + Azure Cognitive Search</h4>

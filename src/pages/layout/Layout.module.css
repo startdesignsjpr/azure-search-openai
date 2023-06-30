@@ -5,8 +5,9 @@
 }
 
 .header {
-    background-color: #222222;
+    background-color: #000c55;
     color: #f2f2f2;
+    height: 56px;
 }
 
 .headerContainer {
@@ -15,14 +16,27 @@
     justify-content: space-around;
     margin-right: 12px;
     margin-left: 12px;
+    height: 56px;
 }
 
-.headerTitleContainer {
+/* .headerTitleContainer {
     display: flex;
     align-items: center;
     margin-right: 40px;
     color: #f2f2f2;
     text-decoration: none;
+} */
+
+.headerLogoContainer {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    height: 48px;
+    width: 248px;
+}
+
+.headerLogoContainer img{
+    height: 100%;
 }
 
 .headerLogo {
@@ -48,6 +62,7 @@
     transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
     transition-duration: 500ms;
     transition-property: opacity;
+    padding: 12px 16px;
 }
 
 .headerNavPageLink:hover {
@@ -57,6 +72,8 @@
 .headerNavPageLinkActive {
     color: #f2f2f2;
     text-decoration: none;
+    border-bottom: solid 5px #0059ff;
+    padding: 12px 16px;
 }
 
 .headerNavLeftMargin {
@@ -65,7 +82,8 @@
 
 .headerRightText {
     font-weight: normal;
-    margin-left: 40px;
+    font-size: 13px;
+    color: #f2f2f2;
 }
 
 .microsoftLogo {

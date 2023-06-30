@@ -47,11 +47,13 @@ export const QuestionInput = ({ onSend, disabled, placeholder, clearOnSend }: Pr
         <Stack horizontal className={styles.questionInputContainer}>
             <TextField
                 className={styles.questionInputTextArea}
+                styles={{ field: { fontFamily: 'sora', maxHeight: '130px', overflowY: 'auto' } }}
                 placeholder={placeholder}
                 multiline
                 resizable={false}
                 borderless
                 value={question}
+                autoAdjustHeight
                 onChange={onQuestionChange}
                 onKeyDown={onEnterPress}
             />
@@ -61,7 +63,7 @@ export const QuestionInput = ({ onSend, disabled, placeholder, clearOnSend }: Pr
                     aria-label="Ask question button"
                     onClick={sendQuestion}
                 >
-                    <Send28Filled primaryFill="rgba(115, 118, 225, 1)" />
+                    <Send28Filled primaryFill="rgba(0, 89, 255, 1)" />
                 </div>
             </div>
         </Stack>

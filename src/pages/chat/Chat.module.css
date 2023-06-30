@@ -28,16 +28,22 @@
     padding-top: 60px;
 }
 
+.minilogo{
+    height: 72px;
+}
+
 .chatEmptyStateTitle {
-    font-size: 4rem;
+    font-size: 48px;
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 30px;
 }
 
 .chatEmptyStateSubtitle {
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 10px;
+    font-size: 20px;
+    color: #12121a;
 }
 
 @media only screen and (max-height: 780px) {
@@ -46,8 +52,10 @@
     }
 
     .chatEmptyStateTitle {
-        font-size: 3rem;
+        font-size: 36px;
+        margin-top: 16px;
         margin-bottom: 0px;
+        color: #12121a;
     }
 }
 
@@ -85,7 +93,7 @@
     padding-right: 24px;
     width: 100%;
     max-width: 1028px;
-    background: #f2f2f2;
+    background: #f2f5fc;
 }
 
 .chatAnalysisPanel {
@@ -98,6 +106,7 @@
 
 .chatSettingsSeparator {
     margin-top: 15px;
+    font-size: 20px;
 }
 
 .loadingLogo {
